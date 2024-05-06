@@ -41,7 +41,7 @@ export default function App() {
       />
       {suggestedText && (
         <p>
-          Did you mean: <strong>{suggestedText}</strong>?
+          Did you mean: {suggestedText}?
         </p>
       )}
     </div>
