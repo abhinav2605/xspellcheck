@@ -32,7 +32,9 @@ export default function App() {
   return (
     <div>
       <h1>Spell Check and Auto-Correction</h1>
-      <textarea></textarea>
+      <input type="text" value={inputText}
+        onChange={handleInputChange}
+        placeholder="Enter text..."/>
       <textarea
         value={inputText}
         onChange={handleInputChange}
