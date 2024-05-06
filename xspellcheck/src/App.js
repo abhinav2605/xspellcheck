@@ -30,11 +30,9 @@ export default function App() {
     setsuggestedText(firstCorrection || "");
   }
   return (
-    <div>
+    <>
       <h1>Spell Check and Auto-Correction</h1>
-      <input type="text" value={inputText}
-        onChange={handleInputChange}
-        placeholder="Enter text..."/>
+     
       <textarea
         value={inputText}
         onChange={handleInputChange}
@@ -47,6 +45,6 @@ export default function App() {
           Did you mean: {suggestedText}?
         </p>
       )}
-    </div>
+    </>
   );
 }
