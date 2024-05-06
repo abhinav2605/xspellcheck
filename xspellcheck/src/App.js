@@ -30,21 +30,22 @@ export default function App() {
     setsuggestedText(firstCorrection || "");
   }
   return (
-    <>
-      <h1>Spell Check and Auto-Correction</h1>
+    // <>
+    //   <h1>Spell Check and Auto-Correction</h1>
      
-      <textarea
-        value={inputText}
-        onChange={handleInputChange}
-        placeholder="Enter text..."
-        rows={5}
-        cols={40}
-      />
-      {suggestedText && (
-        <p>
-          Did you mean: {suggestedText}?
-        </p>
-      )}
-    </>
+    //   <textarea
+    //     value={inputText}
+    //     onChange={handleInputChange}
+    //     placeholder="Enter text..."
+    //     rows={5}
+    //     cols={40}
+    //   />
+    //   {suggestedText && (
+    //     <p>
+    //       Did you mean: {suggestedText}?
+    //     </p>
+    //   )}
+    // </>
+    <textarea></textarea>
   );
 }
